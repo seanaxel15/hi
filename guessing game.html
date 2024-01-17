@@ -34,7 +34,7 @@
     <script>
         function checkGuess() {
             var guess = parseInt(document.getElementById("guess").value);
-            var randomNumber = Math.int(Math.random() * 100) + 1;
+            var randomNumber = Math.absolute(Math.random() * 100) + 1;
 
             if (guess === randomNumber) {
                 document.getElementById("result").innerHTML = "Congratulations! You guessed the correct number.";
